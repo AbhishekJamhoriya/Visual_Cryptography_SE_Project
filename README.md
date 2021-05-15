@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Visual Cryptography
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Course project for CSL2060 Software Engineering
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+To solve the problem of data security we have built this software that encrypt your data with the help of a private key without that key your file can't be decrypted back and your data will be secure.For encryption and decryption process we have used AES algorithm which is one of the most secure algorith for encryption .we have imported this AEs algorithm from the Crypto-js library. we have also used Firebase for Authentication, Database and hosting our site.
 
-### `npm start`
+### `Library used `
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Open [Reactstrap](https://reactstrap.github.io/) to add components.We have used this react library to add components in our website components like form,navbar etc.\
+Open [React-recaptch](https://www.npmjs.com/package/react-recaptcha) to add recaptch.We have used this  library to add components in our website components like form,navbar etc.\
+Open [React-toastify](https://www.npmjs.com/package/react-toastify) to add components.We have used this  library to add recaptch on our reset-password page.\
+Open [Axios](https://www.npmjs.com/package/axios) to add axios.We have used this library to download our decypted file .\
+Open [Crypto-js](https://www.npmjs.com/package/crypto-js) to add crypto-js.We have used this library to add our encryption and decryption AES algorithm.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Login page`
 
-### `npm run build`
+If users credentials are correct then he/she will be logged in otherwise a alert message will pop-up regarding what went wrong.
+![running tests](image/Screenshot%20(333).png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Signin page`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+User can create his account here or he/she may login through google account.
+![running tests](image/Screenshot%20(334).png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `Forgot Password page`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If user forgets his/her password he can follow this steps and after clicking on sent button a reset link will be sent to the given email address.
+![running tests](image/Screenshot%20(336).png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `Home page`
 
-## Learn More
+Here you can choose what you want to do whether you want to encrypt your file or you want to decrpyt it.
+![running tests](image/Screenshot%20(337).png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `Contact Page`
+You can contact us by any of the below method
+![running tests](image/Screenshot%20(338).png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `Profile page`
 
-### Analyzing the Bundle Size
+Here user can create his profile.
+![running tests](image/Screenshot%20(339).png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### `Encryption process`
+This are the 3 simple steps to encrypt your file.
+![running tests](image/Screenshot%20(340).png)
+![running tests](image/Screenshot%20(341).png)
+![running tests](image/Screenshot%20(342).png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### `Decryption process`
+This are the 3 simple steps to decrypt your file.
+![running tests](image/Screenshot%20(343).png)
+![running tests](image/Screenshot%20(344).png)
+![running tests](image/Screenshot%20(345).png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### `Firebase`
+Firebase is a backend platform.\ 
+We have used firebase for authentication ,database and Hosting:
+![running tests](image/Screenshot%20(353).png)
 
-### Deployment
+### `Firebase\Authenticaion`
+Firebase Authentication provides backend service.\
+It will take care of all the login devices.
+![running tests](image/Screenshot%20(346).png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### `Firebase\Firestore`
+Database were users Feedback and information will be stored.
 
-### `npm run build` fails to minify
+Users: Profile page details will be stored here.
+![running tests](image/Screenshot%20(347).png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feedback: Contact us form will be saved here.
+![running tests](image/Screenshot%20(348).png)
+
+
+### `Firebase\Storage`
+Cloud Storage for Firebase is a powerful, simple, and cost-effective object storage service built for Google scale. \
+All the profile images will be stored here.
+![running tests](image/Screenshot%20(349).png)
+
+### `Firebase\Hosting`
+
+![running tests](image/Screenshot%20(350).png)
+
+Overview
+![running tests](image/Screenshot%20(351).png)
+
+Usage 
+![running tests](image/Screenshot%20(352).png)
+
+
