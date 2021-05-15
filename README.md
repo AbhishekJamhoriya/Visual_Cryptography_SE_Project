@@ -1,6 +1,7 @@
 # Visual Cryptography
 
-Course project for CSL2060 Software Engineering
+
+[Course project for CSL2060 Software Engineering](https://project-deploy-2b18f.web.app) click to open website
 
 ## About
 
